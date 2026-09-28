@@ -38,7 +38,6 @@ curl -fsSL \
 
 If you have cloned this repository, run `./install.sh`; use `./install.sh --project` for the current project, or `./install.sh --agent AGENT_ID` to select a specific supported agent. Repeat `--agent` to target multiple agents. Preview the command with `./install.sh --dry-run`. The installer requires Node.js/npm (`npx`) and Bash. If you prefer not to pipe a remote script to Bash—or are on Windows PowerShell—use the direct CLI or manual instructions below.
 
-### Option 1: Install with the `skills` CLI
 ### 📱 On your phone (or any AI chat app)
 
 Works with ChatGPT, Claude, Gemini, Grok, and other AI chat apps. Nothing to download.
