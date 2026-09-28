@@ -24,7 +24,7 @@ On macOS, Linux, or a Bash-compatible terminal, run this from any directory to i
 
 ```bash
 curl -fsSL \
-  https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/feature/easy-install/install.sh \
+  https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/main/install.sh \
   | bash
 ```
 
@@ -32,7 +32,7 @@ The installer uses the cross-agent `skills` CLI and lets you choose from the age
 
 ```bash
 curl -fsSL \
-  https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/feature/easy-install/install.sh \
+  https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/main/install.sh \
   | bash -s -- --project
 ```
 
