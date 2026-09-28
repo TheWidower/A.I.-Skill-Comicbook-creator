@@ -18,6 +18,26 @@ The skill preserves a source's essential events, relationships, tone, and ending
 
 ## Installation
 
+### Quick install for any supported AI
+
+On macOS, Linux, or a Bash-compatible terminal, run this from any directory to install the skill in your user-level skill directory:
+
+```bash
+curl -fsSL \
+  https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/feature/easy-install/install.sh \
+  | bash
+```
+
+The installer uses the cross-agent `skills` CLI and lets you choose from the agent runtimes it supports. It installs globally by default, so the skill is available across your projects. To install for the current project instead, run the command from that project's root and add `--project`:
+
+```bash
+curl -fsSL \
+  https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/feature/easy-install/install.sh \
+  | bash -s -- --project
+```
+
+If you have cloned this repository, run `./install.sh`; use `./install.sh --project` for the current project, or `./install.sh --agent AGENT_ID` to select a specific supported agent. Repeat `--agent` to target multiple agents. Preview the command with `./install.sh --dry-run`. The installer requires Node.js/npm (`npx`) and Bash. If you prefer not to pipe a remote script to Bash—or are on Windows PowerShell—use the direct CLI or manual instructions below.
+
 ### Option 1: Install with the `skills` CLI
 
 The open Agent Skills ecosystem CLI can install this repository's skill into a supported agent. Run this from the project where you want to use it:
@@ -200,6 +220,7 @@ For stronger visual continuity, keep the same design bible and character referen
 .
 ├── LICENSE
 ├── README.md
+├── install.sh
 └── SKILL.md
 ```
 
