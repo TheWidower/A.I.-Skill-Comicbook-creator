@@ -16,9 +16,36 @@ Turn a prompt, story, prose passage, script, or rough concept into a customizabl
 
 The skill preserves a source's essential events, relationships, tone, and ending unless you request changes. It uses sensible defaults for unspecified choices instead of making you fill in a long questionnaire.
 
-## Installation
+## Quick Start
 
-### Option 1: Install with the `skills` CLI
+### 📱 On your phone (or any AI chat app)
+
+Works with ChatGPT, Claude, Gemini, Grok, and other AI chat apps. Nothing to download.
+
+**Step 1.** Open this link. Press and hold on the text, tap **Select All**, then tap **Copy**.
+👉 **[Get the skill](https://raw.githubusercontent.com/TheWidower/A.I.-Skill-Comicbook-creator/main/SKILL.md)**
+
+**Step 2.** Open your AI app and start a new chat. Paste what you copied, then type what comic you want underneath it. For example:
+
+> Use these instructions to make me a funny 4-panel comic about a cat who scares the robot vacuum.
+
+That's it. The AI writes your comic, and if your app can make pictures, it can draw the panels too. Paste the skill again whenever you start a new chat.
+
+### 💻 On a computer with an AI coding agent
+
+Tell your agent:
+
+> Install the comic-book-creator skill from https://github.com/TheWidower/A.I.-Skill-Comicbook-creator
+
+Or paste this into your terminal:
+
+```bash
+npx skills add TheWidower/A.I.-Skill-Comicbook-creator --skill comic-book-creator
+```
+
+## Advanced Installation
+
+### Install with the `skills` CLI
 
 The open Agent Skills ecosystem CLI can install this repository's skill into a supported agent. Run this from the project where you want to use it:
 
@@ -44,9 +71,9 @@ To check installed skills later:
 npx skills list
 ```
 
-The `skills` CLI supports multiple agent runtimes. See its [documentation](https://github.com/antfu/skills-cli) for current options and supported agents.
+The `skills` CLI supports multiple agent runtimes. See its [documentation](https://github.com/vercel-labs/skills) for current options and supported agents.
 
-### Option 2: Install manually
+### Install manually
 
 A skill is a folder containing `SKILL.md`. Put the file in a skill directory recognized by your agent. For example, from a project root, use `.agents/skills` (supported by the Agent Skills quickstart and several compatible agents):
 
